@@ -1,0 +1,32 @@
+{
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+      "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    }
+  },
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "rust-analyzer.enable": true,
+  "rust-analyzer.server.path": "/Users/vigneshsundararajan/.local/bin/rust-analyzer",
+  "latex.build.executable": "latexmk",
+  "latex.build.outputDirectory": "./build",
+  "latex.build.onSave": true,
+  "latex.lint.onChange": true,
+  "latex.build.args": [
+    "-pdf",
+    "-interaction=nonstopmode",
+    "-synctex=1",
+    "%f",
+    "-pv",
+    "-outdir=./build"
+  ],
+  "latex.forwardSearch.executable": "/Applications/Skim.app/Contents/SharedSupport/displayline",
+  "latex.forwardSearch.args": ["%l", "%p", "%f"]
+}
