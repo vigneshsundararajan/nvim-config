@@ -28,6 +28,7 @@ Plug 'jiangmiao/auto-pairs'                             " Insert/Delete Quotes/B
 Plug 'nvim-lua/popup.nvim'                              
 Plug 'nvim-lua/plenary.nvim'                            
 Plug 'nvim-telescope/telescope.nvim'                    " Fuzzy Finder 
+Plug 'tpope/vim-fugitive'                               " Git wrapper in nvim 
 
 " Themes
 Plug 'sonph/onehalf', {'rtp': 'vim/'}

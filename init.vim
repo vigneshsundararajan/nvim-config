@@ -4,6 +4,7 @@ source $HOME/.config/nvim/keys/mappings.vim
 
 "Plugins and their configs
 source $HOME/.config/nvim/plugins-include/plugins.vim
+source $HOME/.config/nvim/plugins-config/vim-fugitive.vim
 source $HOME/.config/nvim/plugins-config/treesitter.vim
 source $HOME/.config/nvim/plugins-config/coc.vim
 source $HOME/.config/nvim/plugins-config/vim-cmake.vim
