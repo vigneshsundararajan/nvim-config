@@ -29,9 +29,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Opening terminal at bottom of workspace
-nnoremap <Leader>te :split <bar>resize 20 <bar>terminal<CR>
-
 " Emmet mapping
 let g:user_emmet_leader_key=','
 

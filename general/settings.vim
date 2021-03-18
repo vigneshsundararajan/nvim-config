@@ -5,7 +5,12 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Adding Python path
-let g:python3_host_prog='/Users/vigneshsundararajan/Documents/Programming/nvim-env/bin/python'
+let g:python3_host_prog='~/venvs/neovim/bin/python'
+let g:loaded_python_provider = 0
+
+" Disabling Perl and Ruby provider
+let g:loaded_perl_provider = 0
+let g:loaded_ruby_provider = 0
 
 " Setting Leader Key 
 let g:mapleader = "\<Space>"

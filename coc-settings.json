@@ -11,8 +11,15 @@
       }
     }
   },
+  "python.pythonPath": "python",
+  "python.venvPath": "~/venvs/",
+  "python.jediPath": "~/venvs/jedi/lib/python3.8/site-packages/",
+  "jedi.enable": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/venvs/black/bin/black",
   "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": false,
+  "python.linting.pylintPath": "~/venvs/pylint/bin/pylint",
   "rust-analyzer.enable": true,
   "rust-analyzer.server.path": "/Users/vigneshsundararajan/.local/bin/rust-analyzer",
   "latex.build.executable": "latexmk",
