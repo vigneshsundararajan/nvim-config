@@ -1,12 +1,10 @@
 set termguicolors
 set t_Co=256
 
-let g:airline_theme='gruvbox'
-let g:gruvbox_contrast_light='hard'
-let g:gruvbox_contrast_dark='hard'
+let g:airline_theme='onehalflight'
 
-set background=dark
-colorscheme gruvbox
+set background=light
+colorscheme onehalflight
 
 " Changing the colorscheme based on time of day
 "if strftime("%H") < 17
