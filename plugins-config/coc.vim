@@ -156,4 +156,17 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " Managing COC extensions
 
+let g:coc_global_extensions = [
+            \ 'coc-clangd' ,
+            \ 'coc-clang-format-style-options' ,
+            \ 'coc-cmake' ,
+            \ 'coc-fzf-preview' ,
+            \ 'coc-java' ,
+            \ 'coc-json' ,
+            \ 'coc-metals' ,
+            \ 'coc-rust-analyzer' ,
+            \ 'coc-sh' ,
+            \ 'coc-pyright' ,
+            \ 'coc-texlab' ,
+\  ]
 
