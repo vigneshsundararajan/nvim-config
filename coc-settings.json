@@ -1,16 +1,5 @@
 {
-  "languageserver": {
-    "ccls": {
-      "command": "ccls",
-      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
-      "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
-      "initializationOptions": {
-        "cache": {
-          "directory": "/tmp/ccls"
-        }
-      }
-    }
-  },
+  "clangd.enabled": true,
   "python.pythonPath": "python",
   "python.venvPath": "~/venvs/",
   "python.jediPath": "~/venvs/jedi/lib/python3.8/site-packages/",

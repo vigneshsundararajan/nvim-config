@@ -7,32 +7,39 @@
 
 call plug#begin()
 
-" Coding plugins
-Plug 'neoclide/coc.nvim', {'branch': 'release'}             " Adding coc for code completion
-Plug 'honza/vim-snippets'                                   " Code Snippets
-Plug 'sbdchd/neoformat'                                     " Code Formatting for Neovim 
-Plug 'mattn/emmet-vim'                                      " Emmet (HTML)
-Plug 'puremourning/vimspector'                              " Debugging
-Plug 'JuliaEditorSupport/julia-vim'                         " Julia Support for nvim
-Plug 'cdelledonne/vim-cmake'                                " CMake + nvim
-Plug 'cespare/vim-toml'                                     " TOML support
-Plug 'jupyter-vim/jupyter-vim'                              " Jupyter kernel integration with nvim 
+" Code Completion and Semantic Highlighting
+Plug 'neoclide/coc.nvim', {'branch': 'release'}             
 
-" Productivity
-Plug 'preservim/nerdtree'                               " Nerdtree for file navigation 
-Plug 'vim-airline/vim-airline'                          " Status bar for nvim
-Plug 'SirVer/ultisnips'                                 " Snippets for code completion
-Plug 'honza/vim-snippets'                               " Required by ultisnips
-Plug 'jiangmiao/auto-pairs'                             " Insert/Delete Quotes/Brackets/Parantheses in pairs
+" Snippets and Code Formatting
+Plug 'honza/vim-snippets'                                   
+Plug 'mattn/emmet-vim'                                      " (HTML)
+Plug 'sbdchd/neoformat'                                     " Code Formatting for Neovim 
+Plug 'SirVer/ultisnips'                                     " Snippets for code completion
+Plug 'honza/vim-snippets'                                   " Required by ultisnips
+Plug 'jiangmiao/auto-pairs'                                 " Insert/Delete Quotes/Brackets/Parantheses in pairs
+
+" Language specific plugins
+Plug 'JuliaEditorSupport/julia-vim'                        
+Plug 'cdelledonne/vim-cmake'                              
+Plug 'cespare/vim-toml'                                 
+Plug 'jupyter-vim/jupyter-vim'                         
+
+" Debugging
+Plug 'puremourning/vimspector'                             
+
+" User Interface 
+Plug 'vim-airline/vim-airline'                                 " Status bar for nvim
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'arcticicestudio/nord-vim'
+
+" File Navigation
 Plug 'nvim-lua/popup.nvim'                              
 Plug 'nvim-lua/plenary.nvim'                            
-Plug 'nvim-telescope/telescope.nvim'                    " Fuzzy Finder 
+Plug 'nvim-telescope/telescope.nvim'                        " Fuzzy Finder 
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
-Plug 'tpope/vim-fugitive'                               " Git wrapper in nvim 
 
-" Themes
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug 'morhetz/gruvbox'
-
+" Git Interface
+Plug 'tpope/vim-fugitive'                                  
 
 call plug#end()
+
