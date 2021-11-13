@@ -44,8 +44,12 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Disabling auto comment on new line
 set clipboard=unnamedplus               " Global copy paste  
 set noswapfile                          " Disables swapfiles
+set wrap 
+let g:neovide_cursor_animation_length=0
 
 
 au! BufWritePost $MYVIMRC so %          " auto source when writing to init.vim
 
 cmap w!! w !sudo tee %                  " Solving the permission issues 
+
+let g:neoterm_default_mod = "botright"

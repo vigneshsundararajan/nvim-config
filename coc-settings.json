@@ -1,5 +1,16 @@
 {
-  "clangd.enabled": true,
+  "languageserver": {
+    "ccls": {
+        "command": "ccls",
+        "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+        "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+        "initializationOptions": {
+            "cache": {
+            "directory": "/tmp/ccls"
+            }
+        }
+    }
+  },
   "python.pythonPath": "python",
   "python.venvPath": "~/venvs/",
   "python.jediPath": "~/venvs/jedi/lib/python3.8/site-packages/",
@@ -21,8 +32,8 @@
     "-synctex=1",
     "%f",
     "-pv",
-    "-outdir=./build"
+    "-outdir=./build",
   ],
   "latex.forwardSearch.executable": "/Applications/Skim.app/Contents/SharedSupport/displayline",
-  "latex.forwardSearch.args": ["%l", "%p", "%f"]
-}
+  "latex.forwardSearch.args": ["%l", "%p", "%f", "-g"]
+  }

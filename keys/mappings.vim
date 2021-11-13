@@ -16,8 +16,8 @@ nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
 
-" <TAB>: completion.
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+" <TAB>: completion for snippets
+" inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Better tabbing
 vnoremap < <gv
@@ -32,3 +32,7 @@ nnoremap <C-l> <C-w>l
 " Emmet mapping
 let g:user_emmet_leader_key=','
 
+" Neoterm mappings
+nnoremap <leader>to <cmd>Tnew<cr>
+nnoremap <leader>tc <cmd>Tclose<cr>
+nnoremap <leader>tk <cmd>Tkill<cr>

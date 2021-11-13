@@ -23,6 +23,8 @@ Plug 'JuliaEditorSupport/julia-vim'
 Plug 'cdelledonne/vim-cmake'                              
 Plug 'cespare/vim-toml'                                 
 Plug 'jupyter-vim/jupyter-vim'                         
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'kristijanhusak/orgmode.nvim'
 
 " Debugging
 Plug 'puremourning/vimspector'                             
@@ -31,6 +33,8 @@ Plug 'puremourning/vimspector'
 Plug 'vim-airline/vim-airline'                                 " Status bar for nvim
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'arcticicestudio/nord-vim'
+Plug 'dracula/vim', {'name': 'dracula'}
+Plug 'kassio/neoterm'                                       " Better terminal experience
 
 " File Navigation
 Plug 'nvim-lua/popup.nvim'                              

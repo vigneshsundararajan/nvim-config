@@ -157,7 +157,6 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " Managing COC extensions
 
 let g:coc_global_extensions = [
-            \ 'coc-clangd' ,
             \ 'coc-clang-format-style-options' ,
             \ 'coc-cmake' ,
             \ 'coc-fzf-preview' ,

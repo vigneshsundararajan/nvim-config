@@ -2,7 +2,7 @@ set termguicolors
 set t_Co=256
 
 set background=dark
-colorscheme nord
+colorscheme onehalfdark
 
 " Changing the colorscheme based on time of day
 "if strftime("%H") < 17
