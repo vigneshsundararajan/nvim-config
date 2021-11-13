@@ -2,9 +2,13 @@
 
 
 ## Screenshots
+- Fuzzy Finding 
+![](images/telescope.png)
 
+- Editor
+![](images/editor.png)
 
-## Features
+# Features
 - Fuzzy finding using [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - Code Completion engine with Goto Definitions and more LSP functionality using [coc](https://github.com/neoclide/coc.nvim)
 - Debugging with dap support using [vimspector](https://github.com/puremourning/vimspector)
