@@ -23,7 +23,6 @@ Plug 'JuliaEditorSupport/julia-vim'
 Plug 'cdelledonne/vim-cmake'                              
 Plug 'cespare/vim-toml'                                 
 Plug 'jupyter-vim/jupyter-vim'                         
-Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'kristijanhusak/orgmode.nvim'
 
 " Debugging
