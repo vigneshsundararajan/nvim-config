@@ -30,8 +30,6 @@ Plug 'puremourning/vimspector'
 
 " User Interface 
 Plug 'vim-airline/vim-airline'                                 " Status bar for nvim
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug 'arcticicestudio/nord-vim'
 Plug 'dracula/vim', {'name': 'dracula'}
 Plug 'kassio/neoterm'                                       " Better terminal experience
 
