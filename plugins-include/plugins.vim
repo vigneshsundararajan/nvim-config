@@ -29,7 +29,7 @@ Plug 'kristijanhusak/orgmode.nvim'
 Plug 'puremourning/vimspector'                             
 
 " User Interface 
-Plug 'vim-airline/vim-airline'                                 " Status bar for nvim
+Plug 'vim-airline/vim-airline'                              " Status bar for nvim
 Plug 'dracula/vim', {'name': 'dracula'}
 Plug 'kassio/neoterm'                                       " Better terminal experience
 
