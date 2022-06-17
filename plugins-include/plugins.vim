@@ -32,6 +32,8 @@ Plug 'puremourning/vimspector'
 Plug 'vim-airline/vim-airline'                              " Status bar for nvim
 Plug 'dracula/vim', {'name': 'dracula'}
 Plug 'kassio/neoterm'                                       " Better terminal experience
+" Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'marko-cerovac/material.nvim'
 
 " File Navigation
 Plug 'nvim-lua/popup.nvim'                              
