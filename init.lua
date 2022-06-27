@@ -1,4 +1,13 @@
+--- General
 require('general.settings')
 require('general.keymaps')
-require('plugins')
+
+--- Packer plugin manager
+require('packer_init')
+
+--- UI settings
 require('theme')
+
+--- Plugin settings
+require('plugins.lspconfig')
+require('plugins.cmp')

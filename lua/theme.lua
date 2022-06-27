@@ -1,2 +1,1 @@
-vim.g.catppuccin_flavour = "latte" -- latte, frappe, macchiato, mocha
-vim.cmd[[colorscheme catppuccin]]
+require('onenord').setup()
