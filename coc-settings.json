@@ -1,0 +1,46 @@
+{
+  "languageserver": {
+    "ccls": {
+        "command": "ccls",
+        "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+        "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+        "initializationOptions": {
+            "cache": {
+            "directory": "/tmp/ccls"
+            }
+        }
+    }
+  },
+  "python.pythonPath": "python",
+  "python.venvPath": "~/venvs/",
+  "python.jediPath": "~/venvs/jedi/lib/python3.8/site-packages/",
+  "jedi.enable": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/venvs/black/bin/black",
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": false,
+  "python.linting.pylintPath": "~/venvs/pylint/bin/pylint",
+  "rust-analyzer.enable": true,
+  "rust-analyzer.server.path": "/Users/vigneshsundararajan/.local/bin/rust-analyzer",
+  "latex.build.executable": "latexmk",
+  "latex.build.outputDirectory": "./build",
+  "latex.build.onSave": true,
+  "latex.lint.onChange": true,
+  "latex.build.args": [
+    "-pdf",
+    "-interaction=nonstopmode",
+    "-synctex=1",
+    "%f",
+    "-pv",
+    "-outdir=./build",
+  ],
+  "latex.forwardSearch.executable": "/Applications/Skim.app/Contents/SharedSupport/displayline",
+  "latex.forwardSearch.args": ["%l", "%p", "%f", "-g"],
+  "languageserver": {
+        "R": {
+            "command": "/usr/local/bin/R",
+            "args" : [ "--slave", "-e", "languageserver::run()"],
+            "filetypes" : ["r"]
+        }
+    }
+  }

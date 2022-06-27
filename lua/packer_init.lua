@@ -14,7 +14,7 @@ end
 vim.cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    autocmd BufWritePost packer_init.lua source <afile> | PackerSync
   augroup end
 ]])
 
@@ -52,6 +52,7 @@ return packer.startup(function(use)
     --- Colorschemes
     use ({"catppuccin/nvim", as = "catppuccin"})
     use 'rmehri01/onenord.nvim'
+    use "ellisonleao/gruvbox.nvim"
 
     --- User Interface
     use {
@@ -81,18 +82,7 @@ return packer.startup(function(use)
     }
 
     --- LSP and Autocomplete
-    use 'neovim/nvim-lspconfig'
-    use {
-        'hrsh7th/nvim-cmp',
-         requires = {
-           'L3MON4D3/LuaSnip',
-           'hrsh7th/cmp-nvim-lsp',
-           'hrsh7th/cmp-path',
-           'hrsh7th/cmp-buffer',
-           'saadparwaiz1/cmp_luasnip',
-         },
-       }
-
+    use {'neoclide/coc.nvim', branch = 'release'}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
