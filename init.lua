@@ -6,8 +6,10 @@ require('general.keymaps')
 require('packer_init')
 
 --- Plugin settings
-require('plugins.coc')
+--- require('plugins.coc')
 
 --- UI settings
 require('theme')
 
+--- LSP Settings
+require('lsp-settings')

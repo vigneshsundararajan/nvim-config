@@ -15,6 +15,7 @@ vim.g.mapleader = " "
 keymap('v', '<', '<gv', opts)
 keymap('v', '<', '<gv', opts)
 keymap('v', '>', '>gv', opts)
+vim.g['UltiSnipsExpandTrigger']="<tab>"
 
 --------------------------------------------------------------------------------------------------
 -- Telescope keymaps
