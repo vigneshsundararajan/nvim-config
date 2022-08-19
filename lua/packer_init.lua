@@ -51,7 +51,7 @@ return packer.startup(function(use)
 
     --- Colorschemes
     use ({"catppuccin/nvim", as = "catppuccin"})
-    use 'rmehri01/onenord.nvim' use "ellisonleao/gruvbox.nvim"
+    use { 'marko-cerovac/material.nvim' }
 
     --- User Interface
     use {
@@ -80,9 +80,13 @@ return packer.startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    --- LSP and Autocomplete
+    --- DAP
+    use { 'mfussenegger/nvim-dap' }
+
+    --- LSP and Autocompletion
     use { 'neovim/nvim-lspconfig' }
-    use { 'hrsh7th/nvim-compe' }
+    use { 'hrsh7th/nvim-cmp' }
+    use { 'simrat39/rust-tools.nvim' }
     use {'SirVer/ultisnips'}
     use {'honza/vim-snippets'}
 

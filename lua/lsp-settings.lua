@@ -1,11 +1,13 @@
-require'lspconfig'.pyright.setup{}
-require'lspconfig'.clangd.setup{}
-
+require('lspconfig').pyright.setup({})
+require('lspconfig').clangd.setup({})
+require('lspconfig').rust_analyzer.setup({})
+require('rust-tools').setup({})
+--
 --- Autoformatting on save
-vim.api.nvim_exec([[
-autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 100)
-autocmd BufWritePre *.cpp lua vim.lsp.buf.formatting_sync(nil, 100)
-]], false)
+ vim.api.nvim_exec([[
+ autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 100)
+ autocmd BufWritePre *.cpp lua vim.lsp.buf.formatting_sync(nil, 100)
+ ]], false)
 
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -17,7 +19,9 @@ vim.api.nvim_set_keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<C
 
 vim.o.completeopt = "menuone,noselect"
 
-require'compe'.setup {
+-- Autocompletion
+local cmp = require'cmp'
+cmp.setup {
   enabled = true;
   autocomplete = true;
   debug = false;
@@ -29,7 +33,10 @@ require'compe'.setup {
   max_abbr_width = 100;
   max_kind_width = 100;
   max_menu_width = 100;
-  documentation = false;
+
+  window = {
+      documentation = cmp.config.window.bordered()
+  };
 
   source = {
     path = true;
@@ -68,7 +75,7 @@ _G.tab_complete = function()
   elseif check_back_space() then
     return t "<Tab>"
   else
-    return vim.fn['compe#complete']()
+    return vim.fn['cmp#complete']()
   end
 end
 _G.s_tab_complete = function()
@@ -89,7 +96,7 @@ vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright', 'rust_analyzer', 'clangd' }
+local servers = { 'pyright', 'clangd' }
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
     on_attach = on_attach,
@@ -99,4 +106,3 @@ for _, lsp in pairs(servers) do
     }
   }
 end
-
